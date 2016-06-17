@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FA17E291D13D1E6000C73C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA17E281D13D1E6000C73C6 /* main.m */; };
+		9FA17E2C1D13D1E6000C73C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA17E2B1D13D1E6000C73C6 /* AppDelegate.m */; };
+		9FA17E2F1D13D1E6000C73C6 /* CamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA17E2E1D13D1E6000C73C6 /* CamViewController.m */; };
+		9FA17E321D13D1E6000C73C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA17E301D13D1E6000C73C6 /* Main.storyboard */; };
+		9FA17E341D13D1E6000C73C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA17E331D13D1E6000C73C6 /* Assets.xcassets */; };
+		9FA17E371D13D1E6000C73C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA17E351D13D1E6000C73C6 /* LaunchScreen.storyboard */; };
+		9FA17E3F1D13D3BA000C73C6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA17E3E1D13D3BA000C73C6 /* AVFoundation.framework */; };
+		9FA17E421D13D46B000C73C6 /* camPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA17E411D13D46B000C73C6 /* camPreview.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9FA17E241D13D1E5000C73C6 /* AVcam_StillImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVcam_StillImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA17E281D13D1E6000C73C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9FA17E2A1D13D1E6000C73C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9FA17E2B1D13D1E6000C73C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9FA17E2D1D13D1E6000C73C6 /* CamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CamViewController.h; sourceTree = "<group>"; };
+		9FA17E2E1D13D1E6000C73C6 /* CamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CamViewController.m; sourceTree = "<group>"; };
+		9FA17E311D13D1E6000C73C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9FA17E331D13D1E6000C73C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FA17E361D13D1E6000C73C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FA17E381D13D1E6000C73C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA17E3E1D13D3BA000C73C6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9FA17E401D13D46B000C73C6 /* camPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camPreview.h; sourceTree = "<group>"; };
+		9FA17E411D13D46B000C73C6 /* camPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = camPreview.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FA17E211D13D1E5000C73C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA17E3F1D13D3BA000C73C6 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FA17E1B1D13D1E5000C73C6 = {
+			isa = PBXGroup;
+			children = (
+				9FA17E3E1D13D3BA000C73C6 /* AVFoundation.framework */,
+				9FA17E261D13D1E6000C73C6 /* AVcam_StillImage */,
+				9FA17E251D13D1E5000C73C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FA17E251D13D1E5000C73C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FA17E241D13D1E5000C73C6 /* AVcam_StillImage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FA17E261D13D1E6000C73C6 /* AVcam_StillImage */ = {
+			isa = PBXGroup;
+			children = (
+				9FA17E2A1D13D1E6000C73C6 /* AppDelegate.h */,
+				9FA17E2B1D13D1E6000C73C6 /* AppDelegate.m */,
+				9FA17E401D13D46B000C73C6 /* camPreview.h */,
+				9FA17E411D13D46B000C73C6 /* camPreview.m */,
+				9FA17E2D1D13D1E6000C73C6 /* CamViewController.h */,
+				9FA17E2E1D13D1E6000C73C6 /* CamViewController.m */,
+				9FA17E301D13D1E6000C73C6 /* Main.storyboard */,
+				9FA17E331D13D1E6000C73C6 /* Assets.xcassets */,
+				9FA17E351D13D1E6000C73C6 /* LaunchScreen.storyboard */,
+				9FA17E381D13D1E6000C73C6 /* Info.plist */,
+				9FA17E271D13D1E6000C73C6 /* Supporting Files */,
+			);
+			path = AVcam_StillImage;
+			sourceTree = "<group>";
+		};
+		9FA17E271D13D1E6000C73C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FA17E281D13D1E6000C73C6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FA17E231D13D1E5000C73C6 /* AVcam_StillImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA17E3B1D13D1E6000C73C6 /* Build configuration list for PBXNativeTarget "AVcam_StillImage" */;
+			buildPhases = (
+				9FA17E201D13D1E5000C73C6 /* Sources */,
+				9FA17E211D13D1E5000C73C6 /* Frameworks */,
+				9FA17E221D13D1E5000C73C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AVcam_StillImage;
+			productName = AVcam_StillImage;
+			productReference = 9FA17E241D13D1E5000C73C6 /* AVcam_StillImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FA17E1C1D13D1E5000C73C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Rathish Marthandan T";
+				TargetAttributes = {
+					9FA17E231D13D1E5000C73C6 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 9FA17E1F1D13D1E5000C73C6 /* Build configuration list for PBXProject "AVcam_StillImage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FA17E1B1D13D1E5000C73C6;
+			productRefGroup = 9FA17E251D13D1E5000C73C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FA17E231D13D1E5000C73C6 /* AVcam_StillImage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FA17E221D13D1E5000C73C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA17E371D13D1E6000C73C6 /* LaunchScreen.storyboard in Resources */,
+				9FA17E341D13D1E6000C73C6 /* Assets.xcassets in Resources */,
+				9FA17E321D13D1E6000C73C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FA17E201D13D1E5000C73C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA17E421D13D46B000C73C6 /* camPreview.m in Sources */,
+				9FA17E2F1D13D1E6000C73C6 /* CamViewController.m in Sources */,
+				9FA17E2C1D13D1E6000C73C6 /* AppDelegate.m in Sources */,
+				9FA17E291D13D1E6000C73C6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9FA17E301D13D1E6000C73C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA17E311D13D1E6000C73C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9FA17E351D13D1E6000C73C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA17E361D13D1E6000C73C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FA17E391D13D1E6000C73C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FA17E3A1D13D1E6000C73C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FA17E3C1D13D1E6000C73C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AVcam_StillImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rathish.AVcam-StillImage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9FA17E3D1D13D1E6000C73C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AVcam_StillImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rathish.AVcam-StillImage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FA17E1F1D13D1E5000C73C6 /* Build configuration list for PBXProject "AVcam_StillImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA17E391D13D1E6000C73C6 /* Debug */,
+				9FA17E3A1D13D1E6000C73C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FA17E3B1D13D1E6000C73C6 /* Build configuration list for PBXNativeTarget "AVcam_StillImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA17E3C1D13D1E6000C73C6 /* Debug */,
+				9FA17E3D1D13D1E6000C73C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FA17E1C1D13D1E5000C73C6 /* Project object */;
+}
