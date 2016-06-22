@@ -6,9 +6,9 @@
 //  Copyright © 2016 ZOHOCORP. All rights reserved.
 //
 
-#import "camPreview.h"
+#import "CamPreview.h"
 
-@implementation camPreview
+@implementation CamPreview
 
 + (Class)layerClass
 {
@@ -25,6 +25,15 @@
 {
     AVCaptureVideoPreviewLayer *previewLayer = (AVCaptureVideoPreviewLayer *)self.layer;
     previewLayer.session = session;
+}
+
+- (void)awakeFromNib{
+
+    self.overlay = [[OverlayView alloc] init];
+    [self.overlay setFillColor:[UIColor clearColor]];
+    [self.overlay setStrokeColor:[UIColor orangeColor]];
+    [self addSubview:self.overlay];
+
 }
 
 @end

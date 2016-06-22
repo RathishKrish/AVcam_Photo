@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "OverlayView.h"
 
-@interface camPreview : UIView
+@interface CamPreview : UIView
 
 @property (nonatomic) AVCaptureSession *session;
+
+@property (nonatomic, strong) OverlayView *overlay;
 
 @end

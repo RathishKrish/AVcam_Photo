@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F006D471D1950BE000489FD /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F006D461D1950BE000489FD /* OverlayView.m */; };
 		9FA17E291D13D1E6000C73C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA17E281D13D1E6000C73C6 /* main.m */; };
 		9FA17E2C1D13D1E6000C73C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA17E2B1D13D1E6000C73C6 /* AppDelegate.m */; };
 		9FA17E2F1D13D1E6000C73C6 /* CamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA17E2E1D13D1E6000C73C6 /* CamViewController.m */; };
@@ -14,10 +15,16 @@
 		9FA17E341D13D1E6000C73C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA17E331D13D1E6000C73C6 /* Assets.xcassets */; };
 		9FA17E371D13D1E6000C73C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA17E351D13D1E6000C73C6 /* LaunchScreen.storyboard */; };
 		9FA17E3F1D13D3BA000C73C6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA17E3E1D13D3BA000C73C6 /* AVFoundation.framework */; };
-		9FA17E421D13D46B000C73C6 /* camPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA17E411D13D46B000C73C6 /* camPreview.m */; };
+		9FA17E421D13D46B000C73C6 /* CamPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA17E411D13D46B000C73C6 /* CamPreview.m */; };
+		9FD05AF31D17C0B300AE95B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD05AF21D17C0B300AE95B4 /* UIKit.framework */; };
+		9FD05AF51D17C0BC00AE95B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD05AF41D17C0BC00AE95B4 /* CoreGraphics.framework */; };
+		9FD05AF71D17C0C600AE95B4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD05AF61D17C0C600AE95B4 /* QuartzCore.framework */; };
+		9FD05AF91D17C0D800AE95B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD05AF81D17C0D800AE95B4 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F006D451D1950BE000489FD /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		9F006D461D1950BE000489FD /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
 		9FA17E241D13D1E5000C73C6 /* AVcam_StillImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVcam_StillImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA17E281D13D1E6000C73C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9FA17E2A1D13D1E6000C73C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,8 +36,12 @@
 		9FA17E361D13D1E6000C73C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FA17E381D13D1E6000C73C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FA17E3E1D13D3BA000C73C6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		9FA17E401D13D46B000C73C6 /* camPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camPreview.h; sourceTree = "<group>"; };
-		9FA17E411D13D46B000C73C6 /* camPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = camPreview.m; sourceTree = "<group>"; };
+		9FA17E401D13D46B000C73C6 /* CamPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamPreview.h; sourceTree = "<group>"; };
+		9FA17E411D13D46B000C73C6 /* CamPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CamPreview.m; sourceTree = "<group>"; };
+		9FD05AF21D17C0B300AE95B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9FD05AF41D17C0BC00AE95B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9FD05AF61D17C0C600AE95B4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9FD05AF81D17C0D800AE95B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +49,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FD05AF91D17C0D800AE95B4 /* Foundation.framework in Frameworks */,
+				9FD05AF71D17C0C600AE95B4 /* QuartzCore.framework in Frameworks */,
+				9FD05AF51D17C0BC00AE95B4 /* CoreGraphics.framework in Frameworks */,
+				9FD05AF31D17C0B300AE95B4 /* UIKit.framework in Frameworks */,
 				9FA17E3F1D13D3BA000C73C6 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,7 +63,6 @@
 		9FA17E1B1D13D1E5000C73C6 = {
 			isa = PBXGroup;
 			children = (
-				9FA17E3E1D13D3BA000C73C6 /* AVFoundation.framework */,
 				9FA17E261D13D1E6000C73C6 /* AVcam_StillImage */,
 				9FA17E251D13D1E5000C73C6 /* Products */,
 			);
@@ -65,17 +79,15 @@
 		9FA17E261D13D1E6000C73C6 /* AVcam_StillImage */ = {
 			isa = PBXGroup;
 			children = (
+				9FD05AF11D17BE4A00AE95B4 /* CameraScreen */,
 				9FA17E2A1D13D1E6000C73C6 /* AppDelegate.h */,
 				9FA17E2B1D13D1E6000C73C6 /* AppDelegate.m */,
-				9FA17E401D13D46B000C73C6 /* camPreview.h */,
-				9FA17E411D13D46B000C73C6 /* camPreview.m */,
-				9FA17E2D1D13D1E6000C73C6 /* CamViewController.h */,
-				9FA17E2E1D13D1E6000C73C6 /* CamViewController.m */,
 				9FA17E301D13D1E6000C73C6 /* Main.storyboard */,
 				9FA17E331D13D1E6000C73C6 /* Assets.xcassets */,
 				9FA17E351D13D1E6000C73C6 /* LaunchScreen.storyboard */,
 				9FA17E381D13D1E6000C73C6 /* Info.plist */,
 				9FA17E271D13D1E6000C73C6 /* Supporting Files */,
+				9FD05AFA1D17C0E100AE95B4 /* Frameworks */,
 			);
 			path = AVcam_StillImage;
 			sourceTree = "<group>";
@@ -86,6 +98,31 @@
 				9FA17E281D13D1E6000C73C6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FD05AF11D17BE4A00AE95B4 /* CameraScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9F006D451D1950BE000489FD /* OverlayView.h */,
+				9F006D461D1950BE000489FD /* OverlayView.m */,
+				9FA17E401D13D46B000C73C6 /* CamPreview.h */,
+				9FA17E411D13D46B000C73C6 /* CamPreview.m */,
+				9FA17E2D1D13D1E6000C73C6 /* CamViewController.h */,
+				9FA17E2E1D13D1E6000C73C6 /* CamViewController.m */,
+			);
+			name = CameraScreen;
+			sourceTree = "<group>";
+		};
+		9FD05AFA1D17C0E100AE95B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FD05AF81D17C0D800AE95B4 /* Foundation.framework */,
+				9FD05AF61D17C0C600AE95B4 /* QuartzCore.framework */,
+				9FD05AF41D17C0BC00AE95B4 /* CoreGraphics.framework */,
+				9FD05AF21D17C0B300AE95B4 /* UIKit.framework */,
+				9FA17E3E1D13D3BA000C73C6 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +195,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FA17E421D13D46B000C73C6 /* camPreview.m in Sources */,
+				9FA17E421D13D46B000C73C6 /* CamPreview.m in Sources */,
+				9F006D471D1950BE000489FD /* OverlayView.m in Sources */,
 				9FA17E2F1D13D1E6000C73C6 /* CamViewController.m in Sources */,
 				9FA17E2C1D13D1E6000C73C6 /* AppDelegate.m in Sources */,
 				9FA17E291D13D1E6000C73C6 /* main.m in Sources */,
@@ -314,6 +352,7 @@
 				9FA17E3D1D13D1E6000C73C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
