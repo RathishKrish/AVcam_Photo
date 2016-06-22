@@ -1,9 +1,9 @@
 //
 //  OverlayView.m
-//  Try
+//  AVcam_StillImage
 //
-//  Created by Arunachalam Saravanan on 04/03/15.
-//  Copyright (c) 2015 Zoho. All rights reserved.
+//  Created by Rathish Krish T on 22/02/16.
+//  Copyright © 2016 ZOHOCORP. All rights reserved.
 //
 
 #import "OverlayView.h"

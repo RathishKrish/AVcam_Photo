@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CamViewController.h
 //  AVcam_StillImage
 //
 //  Created by Rathish Krish T on 17/06/16.

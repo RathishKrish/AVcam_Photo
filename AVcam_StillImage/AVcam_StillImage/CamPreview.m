@@ -1,6 +1,6 @@
 //
-//  BCFocusView.m
-//  Leads
+//  CamPreview.m
+//  AVcam_StillImage
 //
 //  Created by Rathish Krish T on 22/02/16.
 //  Copyright © 2016 ZOHOCORP. All rights reserved.

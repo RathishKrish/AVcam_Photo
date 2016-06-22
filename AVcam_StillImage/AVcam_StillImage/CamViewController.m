@@ -1,5 +1,5 @@
 //
-//  ViewController.m
+//  CamViewController.m
 //  AVcam_StillImage
 //
 //  Created by Rathish Krish T on 17/06/16.
@@ -9,6 +9,7 @@
 #import <AVFoundation/AVFoundation.h>
 
 #import "CamViewController.h"
+
 #import "CamPreview.h"
 
 @interface CamViewController ()<AVCaptureMetadataOutputObjectsDelegate,AVCaptureVideoDataOutputSampleBufferDelegate>
@@ -75,38 +76,17 @@
 
 }
 
-#pragma mark - Timer
 
--(void)startDetectedTimer
-{
-    dispatch_async(dispatch_get_main_queue(), ^{
-        self.ovelayDismissTime = 0;
-        self.metaDataTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateDetectedTime:) userInfo:nil repeats:YES];
-    });
-}
--(void)resetDetectedTimer
-{
-    dispatch_async(dispatch_get_main_queue(), ^{
-        if ([self.metaDataTimer isValid]) {
-            [self.metaDataTimer invalidate];
-            self.metaDataTimer = nil;
-            [self.cameraPreview.overlay erase];
-            self.ovelayDismissTime =0;
-        }
-    });
-}
-
-- (void) updateDetectedTime:(NSTimer *)timer{
-    self.ovelayDismissTime += 1;
-}
+#pragma mark - Frames
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
 {
     if (self.ovelayDismissTime >2) {
         [self resetDetectedTimer];
     }
-
 }
+
+#pragma mark - Meta data Delegate
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection
 {
@@ -136,6 +116,8 @@
 
 }
 
+#pragma mark - Overlay Points
+
 - (CGPoint)pointFromArray:(NSArray *)points atIndex:(NSUInteger)index {
     NSDictionary *dict = [points objectAtIndex:index];
     CGPoint point;
@@ -154,6 +136,31 @@
         [aPath closePath];
         [self.cameraPreview.overlay drawPath:aPath ofWidth:3.0f];
     });
+}
+
+#pragma mark - Timer
+
+-(void)startDetectedTimer
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.ovelayDismissTime = 0;
+        self.metaDataTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateDetectedTime:) userInfo:nil repeats:YES];
+    });
+}
+-(void)resetDetectedTimer
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if ([self.metaDataTimer isValid]) {
+            [self.metaDataTimer invalidate];
+            self.metaDataTimer = nil;
+            [self.cameraPreview.overlay erase];
+            self.ovelayDismissTime =0;
+        }
+    });
+}
+
+- (void) updateDetectedTime:(NSTimer *)timer{
+    self.ovelayDismissTime += 1;
 }
 
 - (void)didReceiveMemoryWarning {
